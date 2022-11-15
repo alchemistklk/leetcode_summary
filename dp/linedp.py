@@ -79,7 +79,8 @@ class MinCostSolution:
 
 
 # 265. 粉刷房子 II
-# https://leetcode.cn/problems/paint-house-ii/?envType=study-plan&id=dong-tai-gui-hua-ji-chu&plan=dynamic-programming&plan_progress=4dfaiy2
+# https://leetcode.cn/problems/paint-house-ii/
+# ?envType=study-plan&id=dong-tai-gui-hua-ji-chu&plan=dynamic-programming&plan_progress=4dfaiy2
 
 class MinCostIISolution:
     def minCostII(self, costs: List[List[int]]) -> int:
@@ -105,7 +106,8 @@ class MinCostIISolution:
 
 
 # 121. 买卖股票的最佳时机
-# https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/?envType=study-plan&id=dong-tai-gui-hua-ji-chu&plan=dynamic-programming&plan_progress=4dfaiy2
+# https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/
+# ?envType=study-plan&id=dong-tai-gui-hua-ji-chu&plan=dynamic-programming&plan_progress=4dfaiy2
 
 class MaxProfitSolution:
     def maxProfit(self, prices: List[int]) -> int:
@@ -147,5 +149,5 @@ class MaxProfitSolutioContainFee:
         for i in range(1, n):
             sell = max(sell, buy + prices[i] - fee)
             buy = max(buy, sell - prices[i])
-        
+
         return sell

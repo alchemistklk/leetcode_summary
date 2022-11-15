@@ -115,7 +115,8 @@ class SegementTree:
         self.tree = [0] * (4 * n)
         self.build_tree(1, 1, n, nums)
 
-    def build_tree(self, o: int, left: int, right: int, nums: List[int]) -> None:
+    def build_tree(self, o: int, left: int, right: int,
+                   nums: List[int]) -> None:
         if left == right:
             self.tree[o] += nums[left - 1]
             return
@@ -127,7 +128,8 @@ class SegementTree:
 
         self.tree[o] = self.tree[2 * o] + self.tree[2 * o + 1]
 
-    def update(self, o: int, left: int, right: int, idx: int, val: int) -> None:
+    def update(self, o: int, left: int, right: int,
+               idx: int, val: int) -> None:
         if left == right:
             self.tree[o] = val
             return
